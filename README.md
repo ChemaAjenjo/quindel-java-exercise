@@ -19,7 +19,7 @@
 
 - [x] Añadir una línea al final del documento: dado un texto, tiene que existir un mecanismo para añadirlo al final del documento como una línea nueva.
 
-  ``curl -X PUT -H "Content-Type:application/json" -d "{\"data\":\"new final line\"}' http://localhost:9090/quindel-api/document/3000/line``
+  ``curl -X PUT -H "Content-Type:application/json" -d "{\"data\":\"new final line\"}" http://localhost:9090/quindel-api/document/3000/line``
 
 - [x] Modificar una linea: dado un número de línea y un texto, tiene que existir un mecanismo para substituir el contenido de dicha línea por el texto dado.
 
