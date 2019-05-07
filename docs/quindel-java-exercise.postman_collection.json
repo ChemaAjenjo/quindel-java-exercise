@@ -1,0 +1,315 @@
+{
+	"id": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+	"name": "quindel-java-exercise",
+	"description": "",
+	"order": [
+		"872e4911-5455-7007-caf9-ef9fc6c16d0e",
+		"c6d591f3-30d6-2c21-ee03-bdb5e0398b6e",
+		"60af44e2-b2aa-f980-05e2-5b3966985e68",
+		"c67ad875-e346-8409-d9b4-1f723c51cab3",
+		"3cdb74a9-3231-d6ff-bbe4-0b266ca9a899",
+		"db2054e8-aca7-844d-ddec-9135e3b2aa75",
+		"90252c84-b5fe-1d15-e523-13091c9fcca1",
+		"0e2ee390-bea0-b9cf-7a70-e16a5109e8e8",
+		"9b7d65d4-49b6-f884-96e2-0b1c72649a90",
+		"54e74e22-3876-c961-c7be-fd582a34c287"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1556613951178,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0e2ee390-bea0-b9cf-7a70-e16a5109e8e8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/3000/line/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726166079,
+			"name": "Modificar una linea",
+			"description": "Dado un número de línea y un texto, tiene que existir un mecanismo para substituir el contenido de dicha línea por el texto dado",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": "{\n\t\"data\" : \"line1\"\n}"
+		},
+		{
+			"id": "3cdb74a9-3231-d6ff-bbe4-0b266ca9a899",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9090/quindel-api/document/search?query=line",
+			"queryParams": [
+				{
+					"key": "query",
+					"value": "line",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726159302,
+			"name": "Busqueda de una palabra en todos los documentos",
+			"description": "Busqueda de una palabra en todos los documentos",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": []
+		},
+		{
+			"id": "54e74e22-3876-c961-c7be-fd582a34c287",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/save",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726169953,
+			"name": "Creacion de un documento en BBDD",
+			"description": "Creacion de un documento en BBDD",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"2000\",\n\t\"data\": \"AAAAAAAAAAAAAAAAAAA\\nBBBBBBBBBBBBBBBB\"\n}"
+		},
+		{
+			"id": "60af44e2-b2aa-f980-05e2-5b3966985e68",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9090/quindel-api/document/3000",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726154638,
+			"name": "Recuperar todo el texto del documento",
+			"description": "Tiene que existir un mecanismo que sea capaz de devolver todo el contenido del documento resultado de concatenar todas las líneas por orden.\r\n",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": []
+		},
+		{
+			"id": "872e4911-5455-7007-caf9-ef9fc6c16d0e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9090/quindel-api/document/3000/lines",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726150152,
+			"name": "Numero de líneas del documento",
+			"description": "Recuperar el numero de líneas del documento: el API tiene que proveer un mecanismo por el cual recuperar el número de líneas total que tiene el documento.",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": []
+		},
+		{
+			"id": "90252c84-b5fe-1d15-e523-13091c9fcca1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/line?type=add",
+			"queryParams": [
+				{
+					"key": "type",
+					"value": "add",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726163897,
+			"name": "Añadir una línea al final del documento (Multiple)",
+			"description": "Dado un texto, tiene que existir un mecanismo para añadirlo al final del documento como una línea nueva\r\n",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": "[\r\n  {\r\n    \"id\": 3000,\r\n    \"data\": \"endfile\"\r\n  },\r\n  {\r\n    \"id\": 2000,\r\n    \"data\": \"endfile\"\r\n  }\r\n]"
+		},
+		{
+			"id": "9b7d65d4-49b6-f884-96e2-0b1c72649a90",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/line?type=update",
+			"queryParams": [
+				{
+					"key": "type",
+					"value": "update",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726167776,
+			"name": "Modificar una linea (Multiple)",
+			"description": "Dado un número de línea y un texto, tiene que existir un mecanismo para substituir el contenido de dicha línea por el texto dado",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": "[\r\n  {\r\n    \"id\": 3000,\r\n    \"data\": \"linea 1\",\r\n    \"index\" : 2\r\n  },\r\n  {\r\n    \"id\": 2000,\r\n    \"data\": \"linea 2\",\r\n    \"index\" : 1\r\n  }\r\n]"
+		},
+		{
+			"id": "c67ad875-e346-8409-d9b4-1f723c51cab3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9090/quindel-api/document/3000/search?query=new",
+			"queryParams": [
+				{
+					"key": "query",
+					"value": "new",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726157041,
+			"name": "Busqueda de una palabra en un documento",
+			"description": "Busqueda de una palabra en un documento",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": []
+		},
+		{
+			"id": "c6d591f3-30d6-2c21-ee03-bdb5e0398b6e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/3000/line/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726152601,
+			"name": "Recuperar una línea",
+			"description": "Dado un número de linea, tiene que existir un mecanismo para recuperar el texto de dicha línea.\r\n",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "db2054e8-aca7-844d-ddec-9135e3b2aa75",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/quindel-api/document/3000/line",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1556726161380,
+			"name": "Añadir una línea al final del documento",
+			"description": "Dado un texto, tiene que existir un mecanismo para añadirlo al final del documento como una línea nueva\r\n",
+			"collectionId": "5b614b36-3afa-51c4-eb30-a697662d4c44",
+			"responses": [],
+			"rawModeData": "{\n\t\"data\": \"new final line\"\n}"
+		}
+	]
+}

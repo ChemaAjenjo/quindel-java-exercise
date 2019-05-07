@@ -1,0 +1,6 @@
+server.port: 9090
+
+mongo:
+  hostname: localhost 
+  port: 27017
+  database: quindel-document
