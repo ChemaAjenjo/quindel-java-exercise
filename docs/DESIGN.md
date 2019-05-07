@@ -6,6 +6,10 @@ La función principal de la aplicación es un editor de textos orientados a line
 
 Se ha optado por crear un **API REST** porque dispone de las acciones **CRUD**, muy indicadas para un editor de textos si contemplamos el documento como un almacenamiento de datos.
 
+### Diagrama de flujo
+
+![Diagrama de flujo](diagram_1.png)
+
 ### Estructura
 
 Como la aplicación es algo sencilla se ha estructurado en una paqueteria diferenciada por funcionalidades de las clases: Configuracion (config), Controladores (controller), Modelo de Error (error), Excepciones (exception), Modelo (model) y Servicio o lógica de negocio (Service).
